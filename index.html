@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Telefonica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Agenda</h1>
+
+      <div id="add-contact-form">
+        <form id="form" action="">
+          <div class="input-field">
+            <label for="">Nume:</label>
+            <input id="new-name" type="text" />
+            <label for="">Telefon:</label>
+            <input id="new-number" type="number" />
+          </div>
+
+          <div class="btn-field">
+            <button class="addItem-btn" type="button" onclick="addContact()">
+              ADAUGA CONTACT
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="contact-list">
+        <table id="my-table">
+          <tr class="first-row-th">
+            <th>Nume</th>
+            <th>Telefon</th>
+            <th>&nbsp</th>
+            <th>&nbsp</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
