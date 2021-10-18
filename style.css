@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  background-color: #efefef;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/************** ADD CONTACT *************/
+#add-contact-form,
+#contact-list {
+  background-color: #ffc947;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 25%),
+    0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+label {
+  font-size: 15px;
+}
+
+input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 4px;
+  outline: none;
+}
+
+#new-name {
+  margin-right: 10px;
+}
+
+.btn-field {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.addItem-btn {
+  padding: 7px 8px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #185adb;
+  color: white;
+  border-radius: 3px;
+  align-content: center;
+}
+
+/************** CONTACT LIST *************/
+#contact-list {
+  display: none;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+}
+
+th {
+  padding-bottom: 10px;
+}
+
+.hidden-btn {
+  border: none;
+  background-color: Transparent;
+  color: purple;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.error {
+  border: 2px solid red;
+  color: red;
+}
+
+@media (max-width: 500px) {
+  #contact-list {
+    width: 85%;
+  }
+
+  #add-contact-form {
+    margin-bottom: 45px;
+  }
+}
